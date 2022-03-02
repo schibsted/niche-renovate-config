@@ -5,6 +5,7 @@
         ":automergeMinor",
         ":label(dependencies)",
         ":timezone(Europe/Oslo)",
+        ":rebaseStalePrs",
         "group:definitelyTyped",
         "group:linters",
         "group:test"
