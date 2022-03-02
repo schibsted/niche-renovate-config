@@ -1,0 +1,22 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base",
+        ":automergeMinor",
+        ":label(dependencies)",
+        ":timezone(Europe/Oslo)",
+        "group:definitelyTyped",
+        "group:linters",
+        "group:test"
+    ],
+    "packageRules": [{
+        "updateTypes": [
+            "major"
+        ],
+        "labels": [
+            "MAJOR",
+            "dependencies"
+        ],
+        "prPriority": 1
+    }]
+}
