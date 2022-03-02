@@ -28,12 +28,8 @@
             "groupName": "linters"
         },
         {
-            "packageNames": [
-                "aws-sdk"
-            ],
-            "schedule": [
-                "after 9pm on sunday"
-            ]
+            "matchPackageNames": ["aws-sdk"],
+            "extends": ["schedule:monthly"]
         }
     ]
 }
