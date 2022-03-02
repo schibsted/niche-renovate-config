@@ -11,13 +11,29 @@
         "group:test"
     ],
     "packageRules": [{
-        "updateTypes": [
-            "major"
-        ],
-        "labels": [
-            "MAJOR",
-            "dependencies"
-        ],
-        "prPriority": 1
-    }]
+            "updateTypes": [
+                "major"
+            ],
+            "labels": [
+                "MAJOR",
+                "dependencies"
+            ],
+            "prPriority": 1
+        },
+        {
+            "extends": "packages:linters",
+            "packagePatterns": [
+                "prettier"
+            ],
+            "groupName": "linters"
+        },
+        {
+            "packageNames": [
+                "aws-sdk"
+            ],
+            "schedule": [
+                "after 9pm on sunday"
+            ]
+        }
+    ]
 }
