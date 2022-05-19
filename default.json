@@ -23,9 +23,19 @@
         {
             "extends": "packages:linters",
             "packagePatterns": [
-                "prettier"
+                "prettier",
+                "lint-staged",
+                "^@commitlint/"
             ],
             "groupName": "linters"
+        },
+        {
+            "extends": "packages:release-tools",
+            "packagePatterns": [
+                "release-it",
+                "^@release-it/"
+            ],
+            "groupName": "release-related tools"
         },
         {
             "matchPackageNames": ["aws-sdk"],
