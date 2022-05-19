@@ -24,16 +24,15 @@
             "extends": "packages:linters",
             "packagePatterns": [
                 "prettier",
-                "lint-staged",
-                "^@commitlint/"
+                "lint-staged"
             ],
             "groupName": "linters"
         },
         {
-            "extends": "packages:release-tools",
             "packagePatterns": [
                 "release-it",
-                "^@release-it/"
+                "^@release-it/",
+                "^@commitlint/"
             ],
             "groupName": "release-related tools"
         },
